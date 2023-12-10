@@ -1,0 +1,56 @@
+**Міністерство освіти і науки України **
+*Західноукраїнський національний університет*
+# Факультету комп'ютерних інформаційних технологій
+Кафедри **ІОСУ**
+# текст жирним шрифтом*Лабораторна* робота №3.1
+Підготував
+Студент групи КН-11
+Стрижак В.М.
+# Тернопіль 2023
+
+
+
+
+
+%%html
+<marquee style='width: 50%; color: pink;'><b>qq</b></marquee><br>
+<marquee style='width: 50%; color: purple;'><b>123</b></marquee><br>
+
+
+
+print("Привіт, світ!")
+
+
+num1 = 5
+num2 = 10
+sum_result = num1 + num2
+print(f"Сума чисел {num1} і {num2} дорівнює {sum_result}")
+
+
+!mkdir 'fkitkn11'
+!mkdir 'fkitkn11/vadym'
+!touch 'fkitkn11/vadym/lab3.1'
+
+!cd fkitkn11
+!rm -rf ./vadym/lab3.1
+!rm -rf ./fkitkn11/vadym
+
+Так import matplotlib.pyplot as plt
+import numpy as np
+
+# Генеруємо дані для функції sin(x)
+x = np.linspace(-2 * np.pi, 2 * np.pi, 1000)  # Генеруємо 1000 значень x від -2π до 2π
+y = np.sin(x)  # Обчислюємо відповідні значення y (y = sin(x))
+
+# Побудова графіка
+plt.plot(x, y, label='Функція: y = sin(x)')
+
+# Додавання міток і легенди
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Графік функції sin(x)')
+plt.legend()
+
+# Відображення графіка
+plt.grid(True)
+plt.show()
